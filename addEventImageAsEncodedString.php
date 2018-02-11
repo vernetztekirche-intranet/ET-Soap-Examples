@@ -9,7 +9,7 @@ try {
     $data = file_get_contents($path);
     $imgdata = 'data:image/' . $type . ';base64,' . base64_encode($data);
 
-	$eventid = '1330527';
+	$eventid = '1327062';
 	$external = false;
 	
 	$ret = $client->addEventImageAsEncodedString($eventid, $imgdata, $external );

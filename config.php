@@ -2,7 +2,7 @@
 header('Content-Type: text/plain; charset=utf-8');
 
 # Bitte ggfs. anpassen
-$activeConfig = 1;
+$activeConfig = 5;
 
 switch($activeConfig){
 	// Lokale Entwicklung
@@ -29,6 +29,11 @@ switch($activeConfig){
 		$apiKey  = 'Ihr Api-Key'; # Siehe: http://termine.ekir.de/Admin/apidoc
 		$vid = 0;  # Die zum Api-Key passende Veranstalter-ID
 		break;
+    case 5:
+        $url = 'http://www.evangelische-termine.de/soap';
+        $apiKey  = '58da1b33368e54.24164707';
+        $vid = 3;
+        break;
 	default:
 		break;
 	
