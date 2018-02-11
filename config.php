@@ -8,7 +8,7 @@ switch($activeConfig){
 	// Lokale Entwicklung
 	case 1:
 		$url = 'http://ets.geyer.dev/app_dev.php/soap';
-		$apiKey  = '58c1818c6e4cf3.33261127';
+		$apiKey  = '58da1b33368e54.24164707';
 		$vid = 3;
 		break;
 	case 2:
@@ -35,8 +35,18 @@ switch($activeConfig){
 	
 }
 
+# Für Testzwecke:
+$context = stream_context_create([
+  'ssl' => [
+    'verify_peer' => false,
+    'verify_peer_name' => false,
+    'allow_self_signed' => true
+  ]
+]);
 
-$client = new SoapClient($url . "?WSDL" , array('cache_wsdl' => WSDL_CACHE_NONE));
+
+
+$client = new SoapClient($url . "?WSDL" , array('cache_wsdl' => WSDL_CACHE_NONE,'stream_context' => $context));
 
 $auth = new StdClass;
 $auth->apiKey = $apiKey; 

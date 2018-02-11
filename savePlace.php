@@ -20,7 +20,7 @@ try {
 	$place->kat2 = array(3,4);
 	
 	$place->externalId = 'extern-543453';
-	
+
 	$ret = $client->savePlace($place);
 	
 	var_dump($ret);
