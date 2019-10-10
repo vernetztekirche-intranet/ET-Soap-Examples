@@ -7,8 +7,8 @@ try {
 	
 	// Rückmeldungen eines Zeitraums abrufen:
 
-    $start = '2017-10-01';
-    $end = '2017-10-10';
+    $start = '2019-01-01';
+    $end = '2019-01-15';
 
 	$ret = $client->getFeedbacksOfPeriod($start, $end);
 

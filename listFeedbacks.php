@@ -7,10 +7,10 @@ try {
 	
 	// Rückmeldungen abrufen:
 
-    #$id = 4333418;
-    $id = 'soapexternal1234';
+    $id = 4333370;
+    #$id = 'soapexternal1234';
 
-	$ret = $client->listFeedbacks($id, true);
+	$ret = $client->listFeedbacks($id, false);
 
 	var_dump($ret);
 	

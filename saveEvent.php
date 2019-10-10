@@ -16,10 +16,10 @@ try {
 	
 	// Die weiteren Werte müssen selbstverständlich je nach Veranstaltungstyp und Veranstalter angepasst werden:
 	
-	$event->title = "Gottesdienst (Soap-Test neu)";
+	$event->title = "Gottesdienst (Soap-Test)";
 	$event->subtitle = "mit Kirchenkaffee";
 	$event->mode = 'vonbis';
-	$event->start = "2018-02-18 09:38:00";
+	$event->start = "2019-11-02 09:38:00";
 	$event->end = "0000-00-00 00:00:00";
 	$event->placeid = 24;
 	$event->status = 'ok';
@@ -67,12 +67,14 @@ try {
 	$event->highlight = 'high';
 	
 	$event->channels = '246'; #246
-	
+
+    $event->resources = '3,4';
+
 	$event->professionid = 5;
 
 	$event->lang = 'eng,ita';
 	$event->access = '3,4';
-	$event->statistik = "45";
+	$event->statistik = "445";
  	
 	
 	$ret  = $client->saveEvent($event);
