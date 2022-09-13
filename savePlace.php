@@ -17,6 +17,7 @@ try {
 	$place->destination = 'private';
 	$place->notpublic = 0;
 	$place->region = 404;
+	$place->equip = [1,2,3];
 	$place->kat2 = array(3,4);
 	
 	$place->externalId = 'extern-543453';
