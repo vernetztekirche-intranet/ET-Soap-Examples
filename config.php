@@ -2,12 +2,12 @@
 header('Content-Type: text/plain; charset=utf-8');
 
 # Bitte ggfs. anpassen
-$activeConfig = 5;
+$activeConfig = 1;
 
 switch($activeConfig){
 	// Lokale Entwicklung
 	case 1:
-		$url = 'http://ets.geyer.dev/app_dev.php/soap';
+		$url = 'https://web.ddev-et-elkb-media.orb.local/soap';
 		$apiKey  = '58da1b33368e54.24164707';
 		$vid = 3;
 		break;

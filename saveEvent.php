@@ -19,7 +19,7 @@ try {
 	$event->title = "Gottesdienst (Soap-Test)";
 	$event->subtitle = "mit Kirchenkaffee";
 	$event->mode = 'vonbis';
-	$event->start = "2019-11-02 09:38:00";
+	$event->start = "2025-12-02 09:38:00";
 	$event->end = "0000-00-00 00:00:00";
 	$event->placeid = 24;
 	$event->status = 'ok';
@@ -32,6 +32,7 @@ try {
 	$event->kat2 = 8;
 	$event->email = 'dummy@example.de';
 	$event->personid = '';
+    $event->image = '';
 	
 	$event->regionid = 11;
     $event->subregionid = 403;
@@ -79,7 +80,7 @@ try {
 	
 	$ret  = $client->saveEvent($event);
 	
-	var_dump($ret);
+	print_r($ret);
 	
 } catch(SoapFault $exp){
 	echo $exp->getMessage();

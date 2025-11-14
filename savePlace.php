@@ -19,22 +19,23 @@ try {
 	$place->region = 404;
 	$place->equip = [1,2,3];
 	$place->kat2 = array(3,4);
+    $place->image = '';
 	
 	$place->externalId = 'extern-543453';
 
 	$ret = $client->savePlace($place);
 	
-	var_dump($ret);
+	print_r($ret);
 	
 	// Neu angelegten Ort abrufen:
 	
 	# über id
 	$newplace = $client->getPlace($ret->id);
-	var_dump($newplace);
+	print_r($newplace);
 	
 	# über externalId
 	$newplace2 = $client->getPlace($place->externalId , true);
-	var_dump($newplace2);
+	print_r($newplace2);
 	
 } catch(SoapFault $exp){
 	echo $exp->getMessage();

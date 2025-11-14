@@ -3,12 +3,12 @@ include('config.php');
 
 try {
 	
-	// http://handbuch.evangelische-termine.de/soap-api-dokumentation#listChannels
+	// http://handbuch.evangelische-termine.de/soap-api-dokumentation#listImages
 	
-	// Kanäle abrufen:
+	// Bilder abrufen:
 	
-	# alle Kanäle
-	$ret = $client->listChannels();
+	# alle Ressourcen
+	$ret = $client->listImages();
 	print_r($ret);
 	
 } catch(SoapFault $exp){

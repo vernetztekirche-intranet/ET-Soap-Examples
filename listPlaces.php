@@ -9,11 +9,11 @@ try {
 	
 	# alle Orte
 	$ret = $client->listPlaces();
-	var_dump($ret);
+	print_r($ret);
 	
 	# ein Ort
 	$ret = $client->getPlace($ret[0]->id);
-	var_dump($ret);
+	print_r($ret);
 	
 	/*
 	# exteranlaId

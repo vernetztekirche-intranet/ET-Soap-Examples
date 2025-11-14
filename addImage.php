@@ -6,11 +6,12 @@ try {
 	// Fügt ein Bild zu einer Veranstaltung hinzu
 	
 	$imgurl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Kath._Kirche_Helminghausen.jpg/768px-Kath._Kirche_Helminghausen.jpg';
-	$eventid = '1330527';
-	$external = false;
+    $imgurl = 'https://www.bayern-evangelisch.de/upload/frontpageslider/BuB-Tag-2025-MOTIV-RZ-Slider.jpg';
+	$caption = 'gemeinfrei';
+    $description = 'Buß und Bettag!';
 	
-	$ret = $client->addEventImage($eventid, $imgurl, $external );
-	var_dump($ret);
+	$ret = $client->addImage( $imgurl, $caption, $description );
+	print_r($ret);
 	
 	
 	
