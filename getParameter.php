@@ -7,31 +7,31 @@ try {
 	// Verschiedene Parameter abrufen:
 	
 	$ret = $client->getParameterValues( 'eventtype' );
-	var_dump($ret);
+	print_r($ret);
 	
 	$ret = $client->getParameterValues( 'people' );
-	var_dump($ret);
+	print_r($ret);
 	
 	$ret = $client->getParameterValues( 'region' );
-	var_dump($ret);
+	print_r($ret);
 	
 	$ret = $client->getParameterValues( 'region2' );
-	var_dump($ret);
+	print_r($ret);
 	
 	$ret = $client->getParameterValues( 'region3' );
-	var_dump($ret);
+	print_r($ret);
 	
 	$ret = $client->getParameterValues( 'musickat' );
-	var_dump($ret);
+	print_r($ret);
 	
 	$ret = $client->getParameterValues( 'kat' );
-	var_dump($ret);
+	print_r($ret);
 	
 	$ret = $client->getParameterValues( 'placeregion' );
-	var_dump($ret);
+	print_r($ret);
 	
 	$ret = $client->getParameterValues( 'irgendwasUnsinniges' );
-	var_dump($ret);
+	print_r($ret);
 	
 	
 } catch(SoapFault $exp){

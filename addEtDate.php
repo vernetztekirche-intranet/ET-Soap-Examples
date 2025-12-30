@@ -22,13 +22,13 @@ try {
 	#mit externalid
 	$date = new StdClass();
 	$date->mode = "vonbis";
-	$date->start = "2017-04-18 12:39:00";
+	$date->start = "2026-02-18 12:39:00";
 	$date->end = "";
-	$date->eventid = 'extern-54321'; # externalid des events
+	$date->eventid = '1'; # externalid des events
 	$date->subtitle = "Ohne Kirchenkaffee";
 	$date->externalid = "extern-656777"; # externalid für date
 	
-	$ret = $client->addEtDate($date, true  );
+	$ret = $client->addEtDate($date, false  );
 	var_dump($ret);
 	
 	

@@ -4,13 +4,13 @@ include('config.php');
 try {
 	
 	// Fügt ein Bild zur Mediathek hinzu
-    $path = 'Bilder/christmas.png';
+    $path = 'Bilder/RedSoap.png';
     $type = pathinfo($path, PATHINFO_EXTENSION);
     $data = file_get_contents($path);
     $imgdata = 'data:image/' . $type . ';base64,' . base64_encode($data);
 
-    $caption = 'Pixabay';
-    $alttag = 'Glöckchen';
+    $caption = 'Lummi.ai';
+    $alttag = 'Seife mit Buchstaben';
 	
 	$ret = $client->addImageAsEncodedString( $imgdata, $caption, $alttag );
 	print_r($ret);

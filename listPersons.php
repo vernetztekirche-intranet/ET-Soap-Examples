@@ -9,20 +9,20 @@ try {
 	
 	# alle Personen
 	$ret = $client->listPersons();
-	var_dump($ret);
+	print_r($ret);
 	
 	# eine Person
 	$ret = $client->getPerson($ret[0]->id);
-	var_dump($ret);
+	print_r($ret);
 	
 	/*
 	# exteranlaId
 	$ret = $client->getPerson('7418',true);
-	var_dump($ret);
+	print_r($ret);
 	
 	# Fehler
 	$ret = $client->getPerson(987878787);
-	var_dump($ret);
+	print_r($ret);
 	*/
 	
 } catch(SoapFault $exp){

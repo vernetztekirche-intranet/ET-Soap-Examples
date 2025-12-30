@@ -19,7 +19,7 @@ try {
 	$event->title = "Gottesdienst (Soap-Test)";
 	$event->subtitle = "mit Kirchenkaffee";
 	$event->mode = 'vonbis';
-	$event->start = "2025-12-02 09:38:00";
+	$event->start = "2026-02-01 09:38:00";
 	$event->end = "0000-00-00 00:00:00";
 	$event->placeid = 24;
 	$event->status = 'ok';
@@ -32,7 +32,7 @@ try {
 	$event->kat2 = 8;
 	$event->email = 'dummy@example.de';
 	$event->personid = '';
-    $event->image = '';
+    $event->image = '6a7265aa-6e4b-40a4-8e3a-24439866e347.png';
 	
 	$event->regionid = 11;
     $event->subregionid = 403;
