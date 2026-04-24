@@ -11,8 +11,9 @@ try {
 
     $caption = 'Lummi.ai';
     $alttag = 'Seife mit Buchstaben';
+    $license = 5;
 	
-	$ret = $client->addImageAsEncodedString( $imgdata, $caption, $alttag );
+	$ret = $client->addImageAsEncodedString( $imgdata, $caption, $alttag, $license );
 	print_r($ret);
 	
 	

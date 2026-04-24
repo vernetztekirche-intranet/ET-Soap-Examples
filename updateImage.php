@@ -5,11 +5,12 @@ try {
 	
 	// Aktualisiert den Bildnachweis und die Beschreibung eines Bildes
 	
-	$imageid = '1411a01f-ce71-4647-a556-14aaee1fbcce.jpg';
+	$imageid = '7cacabba-8fb8-48e0-abf1-39fd02554775.png';
 	$caption = 'Bildnachweis geändert';
     $description = 'Geänderte Beschreibung';
+    $license = 3;
 	
-	$ret = $client->updateImage( $imageid, $caption, $description );
+	$ret = $client->updateImage( $imageid, $caption, $description, $license );
 	print_r($ret);
 	
 	
